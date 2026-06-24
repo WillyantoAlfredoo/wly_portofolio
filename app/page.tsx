@@ -53,14 +53,14 @@ const CERTIFICATIONS_DATA = {
       title: "Software Engineering",
       platform: "RevoU",
       year: "2026",
-      image: "sertif/RevoSE.png", 
+      image: "sertif/revo.png", 
       description: "Intensive training on full-stack web development frameworks and modern architecture"
     },
     {
       title: "Artificial Intelligence Using Go",
       platform: "Ruangguru",
       year: "2024",
-      image: "sertif/AIgo.png", 
+      image: "sertif/go.png", 
       description: "Implementation of AI algorithms and machine learning concepts using Go for high-performance backends."
     },
     {
