@@ -206,7 +206,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 items-stretch sm:items-center w-full sm:w-auto">
               <a 
-                href="/WillyantoAlfredo_CV.pdf"
+                href="/WillyantoAlfredo SystemAnalyst.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group/cv px-5 py-3 rounded-full border border-white text-[10px] md:text-xs font-mono font-bold tracking-wider text-black bg-white flex items-center justify-center gap-2 transition-all duration-300 hover:bg-transparent hover:text-white hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
@@ -256,7 +256,13 @@ export default function Home() {
 
               <div className="space-y-4 flex-1">
                 <p className="text-base md:text-lg lg:text-xl text-zinc-400 font-light leading-relaxed max-w-xl mx-auto lg:mx-0">
-                  Information Systems graduate with a strong focus on <span className="text-white font-medium">System Analysis</span>, <span className="text-white font-medium">ERP Systems</span>, and <span className="text-white font-medium">Database Management</span>. Experienced in mapping workflow business processes using UML, building robust backend services with Laravel, and executing statistical data testing to ensure data validity and systems functionality.
+                  Information Systems graduate from Universitas Jambi interested in{" "}
+                  <span className="text-white font-medium">System Analysis</span>. 
+                  Experienced in UML modeling and system validation at Diskominfo. Proficient in{" "}
+                  <span className="text-white font-medium">SQL</span> for database management, with foundational knowledge 
+                  in basic web development, APIs, and ERP. Expanded skills in{" "}
+                  <span className="text-white font-medium">AI using Go</span> via Ruangguru. 
+                  Brings critical thinking and attention to detail to solve problems effectively.
                 </p>
               </div>
 
