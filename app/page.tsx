@@ -43,6 +43,13 @@ const CERTIFICATIONS_DATA = {
       description: "SQL fundamentals covering the basics of manipulating databases"
     },
     {
+      title: "SQL 101: Belajar SQL dari Nol",
+      platform: "Ngulik Data",
+      year: "2026",
+      image: "sertif/sql-101-certificate.png", 
+      description: "Mastered SQL fundamentals including data filtering, aggregation, and complex multi-table analysis using various JOIN types to extract business insights"
+    },
+    {
       title: "QUALITY ASSURANCE INTRODUCTION",
       platform: "Myskill",
       year: "2026",
@@ -139,7 +146,7 @@ export default function Home() {
       {/* Grid Ornamen Latar */}
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#1f1f23_1px,transparent_1px),linear-gradient(to_bottom,#1f1f23_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-10 pointer-events-none z-0"></div>
 
-      {/* Lingkaran Orbit Besar - Sembunyikan di Mobile agar tidak memakan memori/layout render */}
+      {/* Lingkaran Orbit Besar */}
       <div className="hidden sm:flex fixed -top-20 -right-20 w-[600px] h-[600px] border border-zinc-800/40 rounded-full animate-[spin_120s_linear_infinite] pointer-events-none items-center justify-center z-0">
         <div className="w-[450px] h-[450px] border border-dashed border-zinc-800/30 rounded-full"></div>
         <div className="w-[250px] h-[250px] border border-zinc-800/20 rounded-full absolute"></div>
@@ -153,28 +160,25 @@ export default function Home() {
       {/* Memanggil Komponen Sidebar */}
       <Sidebar />
 
-      {/* Lencana Nama - Disesuaikan posisinya di mobile agar tidak bertabrakan */}
+      {/* Lencana Nama */}
       <div className="fixed top-4 right-4 md:top-8 md:right-12 z-50">
         <div className="border border-zinc-800 px-4 py-1.5 md:px-5 md:py-2 rounded-full text-[10px] md:text-xs tracking-wider font-medium bg-zinc-900/60 backdrop-blur-md text-zinc-300 shadow-sm select-none">
           Willyanto Alfredo
         </div>
       </div>
 
-      {/* Konten Utama - Diubah pl-64 menjadi md:pl-64 pr-0 agar di mobile full screen */}
+      {/* Konten Utama */}
       <main className="pl-0 md:pl-64 relative z-10 w-full overflow-x-hidden">
         
         {/* ======================================================== */}
         {/* 1. SECTION HOME */}
         {/* ======================================================== */}
-        {/* Padding disesuaikan dari pr-8 pl-32 menjadi px-6 md:pr-8 md:pl-24 */}
         <section id="home" className="min-h-screen flex flex-col justify-center px-6 py-20 md:py-0 md:pr-8 md:pl-24 relative box-border">
           <div className="relative select-none w-full max-w-full md:max-w-[85vw]">
             <div className="relative inline-block w-full">
-              {/* text-[13vw] diubah menjadi text-[16vw] md:text-[13vw] agar pas di HP */}
               <h1 className="text-[16vw] md:text-[13vw] font-black tracking-tighter leading-[0.75] uppercase bg-gradient-to-b from-white via-zinc-200 to-zinc-500 bg-clip-text text-transparent drop-shadow-2xl">
                 PORTO
               </h1>
-              {/* Dimensi lingkaran planet disesuaikan di mobile */}
               <div className="absolute top-[12%] right-[22%] w-[10vw] h-[10vw] md:w-[6.5vw] md:h-[6.5vw] rounded-full bg-gradient-to-tr from-zinc-700 via-zinc-200 to-white shadow-[inset_-5px_-5px_20px_rgba(0,0,0,0.8),0_15px_30px_rgba(0,0,0,0.6)] z-20"></div>
               <div className="absolute top-[-2%] right-[14%] w-[18vw] h-[14vw] md:w-[12vw] md:h-[10vw] border-[2px] md:border-[4px] border-zinc-300/70 rounded-full rotate-[32deg] transform scale-y-[0.3] z-30 pointer-events-none shadow-[0_0_20px_rgba(255,255,255,0.2)]"></div>
             </div>
@@ -200,7 +204,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* KELOMPOK DUA TOMBOL BARU */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 items-stretch sm:items-center w-full sm:w-auto">
               <a 
                 href="/CV_WILLYANTO ALFREDO.pdf"
@@ -272,7 +275,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Core cards diubah border-radius-nya agar proporsional di HP */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pt-6 max-w-4xl mx-auto w-full">
               <div className="animate-float-1 group/card border border-zinc-800 bg-zinc-900/20 px-6 py-8 rounded-[30px] sm:rounded-[100px] flex flex-col items-center justify-center space-y-3 hover:border-white/40 hover:bg-zinc-900/50 hover:shadow-[0_0_30px_rgba(255,255,255,0.1)] transition-all duration-500 ease-out">
                 <div className="text-[10px] font-mono text-zinc-500 tracking-widest">01 // CORE</div>
@@ -291,43 +293,76 @@ export default function Home() {
               </div>
             </div>
 
-            {/* AREA CORE STACK & 1 KOTAK UTAMA SERTIFIKASI */}
+            {/* AREA CORE STACK & KOTAK SERTIFIKASI YANG SUDAH DI-UPGRADE AGAR MENCOLOK */}
             <div className="pt-8 border-t border-zinc-900/60 space-y-8 w-full">
               <div className="flex flex-col sm:flex-row flex-wrap justify-center text-center sm:text-left gap-y-3 gap-x-12 text-[10px] md:text-[11px] font-mono text-zinc-500">
                 <div><span className="text-zinc-400 font-medium">LANGUAGES:</span> PHP, JavaScript, SQL</div>
                 <div><span className="text-zinc-400 font-medium">FRAMEWORKS & TOOLS:</span> Laravel, Postman, Jira, Git, Draw.io, SmartPLS, SPSS</div>
               </div>
 
-              <div className="space-y-4 max-w-2xl mx-auto">
-                <span className="text-[10px] font-mono text-zinc-400 tracking-[0.2em] uppercase font-semibold block text-center">
-                  // CREDENTIAL SYSTEM
+              <div className="space-y-4 max-w-3xl mx-auto">
+                <span className="text-[10px] font-mono text-zinc-400 tracking-[0.2em] uppercase font-semibold block text-center animate-pulse">
+                  // CREDENTIAL SYSTEM ARCHIVE
                 </span>
                 
+                {/* UPGRADED KARTU PICU SERTIFIKAT (SANGAT VISUAL & INTERAKTIF) */}
                 <div 
                   onClick={() => setIsCertModalOpen(true)}
-                  className="group/cert block p-5 md:p-6 border border-zinc-800 bg-zinc-900/20 rounded-2xl hover:border-white/30 hover:bg-zinc-900/40 hover:shadow-[0_0_40px_rgba(255,255,255,0.05)] cursor-pointer transition-all duration-500 relative"
+                  className="group/cert block p-6 md:p-8 border border-zinc-800 bg-zinc-950/40 rounded-3xl hover:border-white/40 hover:bg-zinc-900/30 hover:shadow-[0_0_50px_rgba(255,255,255,0.08)] cursor-pointer transition-all duration-500 relative overflow-hidden group"
                 >
-                  <div className="h-[2px] absolute top-0 left-0 right-0 bg-gradient-to-r from-transparent via-zinc-700 group-hover:via-white/40 to-transparent transition-all duration-500"></div>
-                  <div className="flex flex-col sm:flex-row justify-between items-start gap-2 mb-2">
-                    <div className="space-y-1 text-left">
-                      <span className="text-[9px] md:text-[10px] font-mono text-zinc-500 uppercase tracking-wider block">
-                        LIST // {CERTIFICATIONS_DATA.items.length} VERIFIED ACQUISITIONS
-                      </span>
-                      <h4 className="text-base md:text-lg font-bold text-zinc-200 group-hover:text-white transition-colors">
+                  {/* Efek Garis Neon Mengalir */}
+                  <div className="h-[2px] absolute top-0 left-0 right-0 bg-gradient-to-r from-transparent via-zinc-700 group-hover/cert:via-white/60 to-transparent transition-all duration-500"></div>
+                  
+                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                    
+                    {/* Kolom Teks Utama (Kiri) */}
+                    <div className="lg:col-span-7 space-y-3 text-left">
+                      <div className="flex items-center gap-2">
+                        <span className="inline-block w-2 h-2 rounded-full bg-zinc-400 animate-ping"></span>
+                        <span className="text-[9px] md:text-[10px] font-mono text-zinc-400 uppercase tracking-widest">
+                          MODULE // {CERTIFICATIONS_DATA.items.length} VERIFIED DIPLOMAS
+                        </span>
+                      </div>
+                      <h4 className="text-lg md:text-2xl font-black tracking-tight text-zinc-100 group-hover/cert:text-white transition-colors bg-gradient-to-r from-white to-zinc-400 bg-clip-text">
                         {CERTIFICATIONS_DATA.title}
                       </h4>
+                      <p className="text-xs text-zinc-400 font-light leading-relaxed group-hover/cert:text-zinc-300 transition-colors">
+                        {CERTIFICATIONS_DATA.shortDesc} Click to run full verification and examine digital credential records.
+                      </p>
                     </div>
-                    <span className="text-[10px] md:text-[11px] font-mono text-zinc-500 group-hover:text-white transition-colors whitespace-nowrap self-end sm:self-start">
-                      [ VIEW ALL ]
-                    </span>
+
+                    {/* Kolom Pratinjau Gambar / Grid Thumbnail (Kanan - Membuat Orang Langsung Ngeh) */}
+                    <div className="lg:col-span-5 relative flex items-center justify-start lg:justify-end overflow-hidden h-20 md:h-24 pr-2">
+                      <div className="flex -space-x-8 md:-space-x-12 transform group-hover/cert:translate-x-[-10px] transition-transform duration-500">
+                        {CERTIFICATIONS_DATA.items.slice(0, 4).map((cert, idx) => (
+                          <div 
+                            key={idx} 
+                            style={{ zIndex: 10 + idx }}
+                            className="w-24 h-16 md:w-32 md:h-20 border border-zinc-700 bg-zinc-900 rounded-lg overflow-hidden rotate-[-8deg] shadow-[5px_5px_15px_rgba(0,0,0,0.6)] group-hover/cert:rotate-[-4deg] group-hover/cert:scale-105 transition-all duration-500 origin-bottom shrink-0 relative"
+                          >
+                            <img src={cert.image} alt="Preview" className="w-full h-full object-cover object-center filter brightness-[0.8] group-hover/cert:brightness-100 transition-all" />
+                            <div className="absolute inset-0 bg-zinc-950/10 group-hover/cert:bg-transparent"></div>
+                          </div>
+                        ))}
+                        {CERTIFICATIONS_DATA.items.length > 4 && (
+                          <div 
+                            style={{ zIndex: 40 }}
+                            className="w-16 h-16 md:w-20 md:h-20 border border-dashed border-zinc-700 bg-zinc-950/90 rounded-lg flex flex-col items-center justify-center text-zinc-400 rotate-[-8deg] shadow-[5px_5px_15px_rgba(0,0,0,0.65)] shrink-0 font-mono text-xs font-bold"
+                          >
+                            +{CERTIFICATIONS_DATA.items.length - 4}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
                   </div>
-                  <p className="text-xs text-zinc-400 text-left font-light leading-relaxed mb-4 group-hover:text-zinc-300 transition-colors">
-                    {CERTIFICATIONS_DATA.shortDesc} Click to inspect all certificates, platform details, and credentials documentation.
-                  </p>
-                  <div className="text-[10px] md:text-[11px] font-mono text-zinc-500 group-hover:text-white transition-colors flex items-center justify-between border-t border-zinc-800/60 pt-3">
-                    <span>EXPLORE CREDENTIAL MODULE</span>
-                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
+
+                  {/* Garis Terminal Navigasi Bawah */}
+                  <div className="text-[10px] md:text-[11px] font-mono text-zinc-500 group-hover/cert:text-white transition-colors flex items-center justify-between border-t border-zinc-900 pt-4 mt-4">
+                    <span className="tracking-widest">// INITIALIZE CREDENTIAL INSPECTION TERMINAL</span>
+                    <span className="transform group-hover/cert:translate-x-1 transition-transform">INSPECT SECURELY →</span>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -347,8 +382,6 @@ export default function Home() {
               <p className="text-[11px] md:text-xs text-zinc-500 font-mono max-w-xs md:max-w-none">Click on any project window to open its multi-view system insights</p>
             </div>
 
-            {/* AREA JENDELA SCROLL HORIZONTAL */}
-            {/* Mengubah w-full md:w-[450px] menjadi w-[85vw] sm:w-[420px] agar tidak terpotong kasar di layar HP */}
             <div className="flex gap-6 overflow-x-auto pb-8 pt-4 px-1 snap-x scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent w-full">
               {PROJECTS_DATA.map((project) => (
                 <div 
@@ -401,7 +434,7 @@ export default function Home() {
         </section>
 
         {/* ======================================================== */}
-        {/* 4. SECTION CONTACT (BENTO INFO & MEDIA SOSIAL) */}
+        {/* 4. SECTION CONTACT */}
         {/* ======================================================== */}
         <section id="contact" className="min-h-screen flex flex-col justify-center px-6 py-20 md:pr-8 md:pl-24 border-t border-zinc-900/50 relative overflow-hidden box-border">
           <div className="max-w-4xl w-full space-y-12 mx-auto">
@@ -412,10 +445,8 @@ export default function Home() {
               <p className="text-[11px] md:text-xs text-zinc-500 font-mono">Let&apos;s connect through official terminals and network nodes</p>
             </div>
 
-            {/* Susunan Bento Grid Minimalis - md:col-span dikunci dengan benar agar grid pecah ke baris tunggal secara sempurna di mobile */}
             <div className="grid grid-cols-1 md:grid-cols-6 gap-4 items-stretch w-full">
               
-              {/* Box 1: Domisili / Lokasi */}
               <div className="md:col-span-3 relative overflow-hidden p-5 md:p-6 border border-zinc-800 bg-zinc-900/10 rounded-2xl flex flex-col justify-between group/geo transition-all duration-500 hover:border-zinc-700 hover:bg-zinc-900/30">
                 <div className="space-y-1 text-left">
                   <span className="text-[10px] font-mono text-zinc-500 uppercase tracking-wider block">// CURRENT LOCATION</span>
@@ -428,7 +459,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Box 2: Email */}
               <a 
                 href="mailto:willyanto.alfredoo@email.com"
                 className="md:col-span-3 relative overflow-hidden p-5 md:p-6 border border-zinc-800 bg-zinc-900/10 rounded-2xl flex flex-col justify-between group/mail transition-all duration-500 hover:border-zinc-500/50 hover:bg-zinc-900/20 hover:shadow-[0_0_30px_rgba(255,255,255,0.05)]"
@@ -444,7 +474,6 @@ export default function Home() {
                 </div>
               </a>
 
-              {/* Box 3: No Telepon / WhatsApp */}
               <a 
                 href="https://wa.me/6289672236850"
                 target="_blank"
@@ -463,7 +492,6 @@ export default function Home() {
                 <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-emerald-500/5 blur-xl group-hover/phone:bg-emerald-500/10 rounded-full transition-all duration-500"></div>
               </a>
 
-              {/* Box 4: LinkedIn */}
               <a 
                 href="http://linkedin.com/in/willyanto-alfredo/"
                 target="_blank" 
@@ -482,9 +510,7 @@ export default function Home() {
                 <div className="absolute -bottom-10 -right-10 w-20 h-20 bg-blue-500/5 blur-xl group-hover/li:bg-blue-500/10 rounded-full transition-all duration-500"></div>
               </a>
 
-              {/* Box 5: GitHub & Instagram */}
               <div className="md:col-span-2 flex flex-col gap-3">
-                {/* GitHub Mini-box */}
                 <a 
                   href="https://github.com/WillyantoAlfredoo"
                   target="_blank" 
@@ -498,7 +524,6 @@ export default function Home() {
                   <span className="text-xs text-zinc-600 group-hover/git:text-white transition-transform group-hover/git:translate-x-0.5">→</span>
                 </a>
 
-                {/* Instagram Mini-box */}
                 <a 
                   href="https://www.instagram.com/_wlyy?igsh=MXJwbGxleDF4anJoeg%3D%3D&utm_source=qr"
                   target="_blank" 
@@ -551,7 +576,6 @@ export default function Home() {
                   <span>// SYSTEM SCREENSHOTS & UML ARCHITECTURE</span>
                   <span className="animate-pulse">SCROLL HORIZONTAL →</span>
                 </div>
-                {/* W-full sm:w-[550px] h-48 sm:h-80 disesuaikan agar screenshot di modal proporsional di HP */}
                 <div className="flex gap-4 md:gap-6 overflow-x-auto pb-4 pt-1 snap-x scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent w-full">
                   {activeProject.galleryImages.map((imgUrl, index) => (
                     <div key={index} className="snap-center shrink-0 w-[80vw] sm:w-[550px] h-48 sm:h-80 rounded-xl border border-zinc-800 overflow-hidden relative bg-zinc-950 shadow-2xl group/img">
@@ -593,7 +617,6 @@ export default function Home() {
               <div className="space-y-6 md:space-y-8 divide-y divide-zinc-800/60">
                 {CERTIFICATIONS_DATA.items.map((cert, index) => (
                   <div key={index} className={`flex flex-col md:flex-row gap-4 md:gap-6 pt-6 ${index === 0 ? 'pt-0' : ''} text-left items-start`}>
-                    {/* Tinggi gambar sertifikat disesuaikan agar proporsional di HP */}
                     <div className="w-full md:w-80 h-40 md:h-48 rounded-xl border border-zinc-800 overflow-hidden relative bg-zinc-950 shrink-0 group/img">
                       <img src={cert.image} alt={cert.title} className="w-full h-full object-cover object-center group-hover/img:scale-105 transition-transform duration-500" />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-60"></div>
