@@ -206,7 +206,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row flex-wrap gap-3 items-stretch sm:items-center w-full sm:w-auto">
               <a 
-                href="/CV_WILLYANTO ALFREDO.pdf"
+                href="/WillyantoAlfredo_CV.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group/cv px-5 py-3 rounded-full border border-white text-[10px] md:text-xs font-mono font-bold tracking-wider text-black bg-white flex items-center justify-center gap-2 transition-all duration-300 hover:bg-transparent hover:text-white hover:shadow-[0_0_25px_rgba(255,255,255,0.25)]"
