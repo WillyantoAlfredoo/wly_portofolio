@@ -40,7 +40,7 @@ const CERTIFICATIONS_DATA = {
       platform: "Google",
       year: "2026",
       image: "sertifggl/sql.png", 
-      description: "SQL fundamentals covering the basics of manipulating databases"
+      description: "Demonstrates foundational knowledge of data analytics concepts, data ecosystems, analytical thinking, data ethics, and the data life cycle, along with an introduction to Spreadsheets, SQL, and Tableau."
     },
     {
       title: "SQL Course",
