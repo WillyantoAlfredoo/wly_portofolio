@@ -39,7 +39,7 @@ const CERTIFICATIONS_DATA = {
       title: "Foundation: Data, Data, Everywhere",
       platform: "Google",
       year: "2026",
-      image: "sertifggl/sql.png", 
+      image: "sertif/sertifggl.png", 
       description: "Demonstrates foundational knowledge of data analytics concepts, data ecosystems, analytical thinking, data ethics, and the data life cycle, along with an introduction to Spreadsheets, SQL, and Tableau."
     },
     {
