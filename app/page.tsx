@@ -36,6 +36,13 @@ const CERTIFICATIONS_DATA = {
   shortDesc: "Verified achievements in JavaScript development, database design, and systems engineering.",
   items: [
     {
+      title: "Foundation: Data, Data, Everywhere",
+      platform: "Google",
+      year: "2026",
+      image: "sertifggl/sql.png", 
+      description: "SQL fundamentals covering the basics of manipulating databases"
+    },
+    {
       title: "SQL Course",
       platform: "Progate",
       year: "2026",
