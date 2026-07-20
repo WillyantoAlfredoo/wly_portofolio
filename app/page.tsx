@@ -38,35 +38,42 @@ const CERTIFICATIONS_DATA = {
     {
       title: "Foundation: Data, Data, Everywhere",
       platform: "Google",
-      year: "2026",
+      year: "July 2026",
       image: "sertif/sertifggl.png", 
       description: "Demonstrates foundational knowledge of data analytics concepts, data ecosystems, analytical thinking, data ethics, and the data life cycle, along with an introduction to Spreadsheets, SQL, and Tableau."
     },
     {
-      title: "SQL Course",
-      platform: "Progate",
-      year: "2026",
-      image: "sertif/sql.png", 
-      description: "SQL fundamentals covering the basics of manipulating databases"
-    },
-    {
       title: "SQL 101: Belajar SQL dari Nol",
       platform: "Ngulik Data",
-      year: "2026",
+      year: "July 2026",
       image: "sertif/sql-101-certificate.png", 
       description: "Mastered SQL fundamentals including data filtering, aggregation, and complex multi-table analysis using various JOIN types to extract business insights"
     },
     {
+      title: "Intro to Data Analytics",
+      platform: "RevoU",
+      year: "July 2026",
+      image: "sertif/Sertifikatdata.png", 
+      description: "Demonstrates foundational knowledge of data analytics, problem-solving frameworks, and data-driven decision making, with hands-on practice using Spreadsheets and Google SQL."
+    },
+    {
+      title: "SQL Course",
+      platform: "Progate",
+      year: "April 2026",
+      image: "sertif/sql.png", 
+      description: "SQL fundamentals covering the basics of manipulating databases"
+    },
+    {
       title: "QUALITY ASSURANCE INTRODUCTION",
       platform: "Myskill",
-      year: "2026",
+      year: "April 2026",
       image: "sertif/qamyskill.png", 
       description: "Learn software testing lifecycles, test case design, and bug tracking to ensure product reliability."
     },
     {
       title: "Software Engineering",
       platform: "RevoU",
-      year: "2026",
+      year: "January 2026",
       image: "sertif/revo.png", 
       description: "Intensive training on full-stack web development frameworks and modern architecture"
     },
@@ -637,7 +644,7 @@ export default function Home() {
                     <div className="space-y-2 md:space-y-3 flex-1 w-full">
                       <div className="flex justify-between items-baseline gap-x-2">
                         <span className="text-[9px] md:text-[10px] font-mono text-zinc-500 uppercase tracking-wider">{cert.platform}</span>
-                        <span className="text-[11px] font-mono text-zinc-500">Issued {cert.year}</span>
+                        <span className="text-[11px] font-mono text-zinc-500">* {cert.year}</span>
                       </div>
                       <h4 className="text-base md:text-lg font-bold text-white tracking-tight">{cert.title}</h4>
                       <p className="text-xs md:text-sm text-zinc-400 font-light leading-relaxed">{cert.description}</p>
