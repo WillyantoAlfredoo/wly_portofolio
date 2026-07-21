@@ -26,6 +26,24 @@ const PROJECTS_DATA = [
 Additionally, I designed and managed MySQL databases using Laravel backend logic to ensure efficient data flow, maintained data accuracy and consistency, and aligned system features with user requirements through close team collaboration.`,
     tech: ["Laravel", "PHP", "MySQL", "UML Modeling", "Draw.io", "System Analysis"], 
     link: "https://diskominfo.jambiprov.go.id" 
+  },
+  {
+    id: "sales-inventory-analytics",
+    title: "Sales & Inventory Analytics",
+    company: "Gayanara Fashion Store (Ngulik Data)",
+    type: "Data Analytics & BI Project",
+    period: "July 2026",
+    logoImage: "project2/ss.png", 
+    galleryImages: [
+      "project2/tabl1.png", 
+      "project2/sql.png",
+      "project2/erd.png",
+      "project2/tabl2.png"
+      
+    ],
+    shortDesc: "Executed relational SQL queries to aggregate sales metrics and built an interactive Tableau dashboard for revenue trend analysis.",
+    longDesc: `Developed an end-to-end data analytics solution to evaluate retail sales performance, track historical revenue growth, and optimize inventory management for an online fashion brand. Wrote complex MySQL queries with JOIN, GROUP BY, and aggregate functions to extract Top 10 Best Sellers, Monthly Sales Trends (2022–2025), and identify slow-moving dead-stock items.`,
+    tech: ["MySQL", "SQL", "Tableau", "Data Analytics", "Relational Database"]
   }
 ];
 
