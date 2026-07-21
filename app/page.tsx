@@ -42,7 +42,9 @@ Additionally, I designed and managed MySQL databases using Laravel backend logic
       
     ],
     shortDesc: "Executed relational SQL queries to aggregate sales metrics and built an interactive Tableau dashboard for revenue trend analysis.",
-    longDesc: `Developed an end-to-end data analytics solution to evaluate retail sales performance, track historical revenue growth, and optimize inventory management for an online fashion brand. Wrote complex MySQL queries with JOIN, GROUP BY, and aggregate functions to extract Top 10 Best Sellers, Monthly Sales Trends (2022–2025), and identify slow-moving dead-stock items.`,
+    longDesc: `Developed an end-to-end data analytics solution to evaluate retail sales performance, track historical revenue growth, and optimize inventory management for an online fashion brand. Wrote complex MySQL queries with JOIN, GROUP BY, and aggregate functions to extract Top 10 Best Sellers, Monthly Sales Trends (2022–2025), and identify slow-moving dead-stock items.
+    
+    Dataset sourced from Ngulik Data: https://ngulikdata.com/datasets/gayanara`,
     tech: ["MySQL", "SQL", "Tableau", "Data Analytics", "Relational Database"]
   }
 ];
