@@ -46,6 +46,26 @@ Additionally, I designed and managed MySQL databases using Laravel backend logic
     
     Dataset sourced from Ngulik Data: https://ngulikdata.com/datasets/gayanara`,
     tech: ["MySQL", "SQL", "Tableau", "Data Analytics", "Relational Database"]
+  },
+  {
+    id: "kreanara-client-portfolio-analytics",
+    title: "Kreanara: Agency Marketing",
+    company: "Kreanara: Agency Marketing (Ngulik Data)",
+    type: "Data Analytics & BI Project",
+    period: "July 2026",
+    logoImage: "project3/oo.jpg", 
+    galleryImages: [
+      "project3/tab1.png", 
+      "project3/sql.png",
+      "project3/erd.png",
+      "project3/tab2.png"
+      
+    ],
+    shortDesc: "Executed relational SQL queries to aggregate client budget metrics across 50 accounts and built an interactive Tableau dashboard for portfolio risk analysis",
+    longDesc: `Developed an end-to-end client portfolio analysis for Kreanara Marketing Agency to evaluate primary revenue drivers and contract risk profiles. Wrote multi-condition MySQL aggregations using GROUP BY, SUM(CASE WHEN), and AVG functions to determine industry budget distributions, active vs. churned status counts, and client geographic spread across cities.
+    
+    Dataset sourced from Ngulik Data: https://ngulikdata.com/datasets/kreanara`,
+    tech: ["MySQL", "SQL", "Tableau", "Data Analytics", "Relational Database"]
   }
 ];
 
